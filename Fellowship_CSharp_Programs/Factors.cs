@@ -25,7 +25,7 @@ namespace Fellowship_CSharp_Programs
                         if (i % j == 0)
                         {
                             isPrime = 0;
-                            break;
+                            return;
                         }
                     }
 
