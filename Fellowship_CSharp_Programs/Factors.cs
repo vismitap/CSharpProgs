@@ -9,38 +9,31 @@ namespace Fellowship_CSharp_Programs
     public class Factors
     {
         int num, flag;
-        public bool IsPrime(int n)
-        {
-            for (int i=2; i<=n/2; i++)
-            {
-                if (n % i == 0)
-                {
-                  //Console.WriteLine("False");
-                    return false;
-                }
-            }
-           // Console.WriteLine("True");
-            return true;
-        }
-
         public void Factor()
         {
             Console.WriteLine("Enter a number : ");
             num = Convert.ToInt32(Console.ReadLine());
-            int i;
-            flag = 0;
+            int i, isPrime;
 
-            for ( i = 2; i <= num; i++) { }
+            for (i = 2; i <= num; i++)
             {
-                if (num%i==0 && IsPrime(i))
+                if (num % i == 0)
                 {
-                    Console.WriteLine(i);
-                    flag = 1;     
+                    isPrime = 1;
+                    for (int j = 2; j <= i / 2; j++)
+                    {
+                        if (i % j == 0)
+                        {
+                            isPrime = 0;
+                            break;
+                        }
+                    }
+
+                    if (isPrime == 1)
+                    {
+                        Console.WriteLine(i);
+                    }
                 }
-            }
-            if (flag == 0)
-            {
-                Console.WriteLine("No Prime factors");
             }
         }
     }
