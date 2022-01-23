@@ -27,7 +27,8 @@ namespace Fellowship_CSharp_Programs
                     "8: Coin Flip \n" +
                     "9: Power of 2 \n" +
                     "10: Harmonic Number \n" +
-                    "11: Factors \n");
+                    "11: Factors \n" +
+                    "12: Matrix Display \n");
 
                 Console.WriteLine("Enter your option: ");
                 int op = Convert.ToInt32(Console.ReadLine());
@@ -39,6 +40,7 @@ namespace Fellowship_CSharp_Programs
                 pow2 pow = new pow2();
                 HarmonicNumber harmonic = new HarmonicNumber();
                 Factors factors = new Factors();
+                FunctionalProg.TwoDimensionalArray arr = new FunctionalProg.TwoDimensionalArray();
 
                 switch (op)
                 {
@@ -91,6 +93,11 @@ namespace Fellowship_CSharp_Programs
                     case 11:
                         factors.Factor();
                         break;
+
+                    case 12:
+                        arr.Matrix();
+                        break;
+                      
 
                     default:
                         Console.WriteLine("Invalid option");
