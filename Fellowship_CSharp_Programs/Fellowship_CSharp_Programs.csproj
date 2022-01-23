@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CoinFlip.cs" />
     <Compile Include="Factors.cs" />
+    <Compile Include="FunctionalProg\TwoDimensionalArray.cs" />
     <Compile Include="HarmonicNumber.cs" />
     <Compile Include="LeapYear.cs" />
     <Compile Include="pow2.cs" />
