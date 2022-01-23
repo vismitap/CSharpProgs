@@ -23,11 +23,22 @@ namespace Fellowship_CSharp_Programs
                     "4: Adding Numbers \n" +
                     "5: Reversing a String \n" +
                     "6. String Replace \n"+
-                    "7: Leap Year \n");
+                    "7: Leap Year \n" +
+                    "8: Coin Flip \n" +
+                    "9: Power of 2 \n" +
+                    "10: Harmonic Number \n" +
+                    "11: Factors \n");
+
                 Console.WriteLine("Enter your option: ");
                 int op = Convert.ToInt32(Console.ReadLine());
+
                 RunProgram prog = new RunProgram();
                 StringReplace stringReplace =  new StringReplace();
+                LeapYear lp = new LeapYear();
+                CoinFlip cf = new CoinFlip();
+                pow2 pow = new pow2();
+                HarmonicNumber harmonic = new HarmonicNumber();
+                Factors factors = new Factors();
 
                 switch (op)
                 {
@@ -61,9 +72,25 @@ namespace Fellowship_CSharp_Programs
                         stringReplace.StringRep();
                         break;
 
-                    case 7: 
+                    case 7:
+                        lp.IsLeapYear();
                         break;
 
+                    case 8:
+                        cf.CalCoinFlipPerecnt();
+                        break;
+
+                    case 9:
+                        pow.CalPow2();
+                        break;
+
+                    case 10:
+                        harmonic.CalHarmonicNo();
+                        break;
+
+                    case 11:
+                        factors.Factor();
+                        break;
 
                     default:
                         Console.WriteLine("Invalid option");
