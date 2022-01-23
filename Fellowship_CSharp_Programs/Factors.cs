@@ -8,7 +8,11 @@ namespace Fellowship_CSharp_Programs
 {
     public class Factors
     {
+<<<<<<< HEAD
         int num;
+=======
+        int num, flag;
+>>>>>>> BasicCoreProg
         public void Factor()
         {
             Console.WriteLine("Enter a number : ");
