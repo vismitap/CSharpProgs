@@ -40,7 +40,7 @@ namespace Fellowship_CSharp_Programs
                 pow2 pow = new pow2();
                 HarmonicNumber harmonic = new HarmonicNumber();
                 Factors factors = new Factors();
-                FunctionalProg.TwoDimensionalArray arr = new FunctionalProg.TwoDimensionalArray();
+                TwoDimensionalArray arr = new TwoDimensionalArray();
 
                 switch (op)
                 {

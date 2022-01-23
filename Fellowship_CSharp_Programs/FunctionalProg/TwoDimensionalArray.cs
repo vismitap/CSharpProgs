@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fellowship_CSharp_Programs.FunctionalProg
+namespace Fellowship_CSharp_Programs
 {
     public class TwoDimensionalArray
     {
