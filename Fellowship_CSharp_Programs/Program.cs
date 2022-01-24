@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Fellowship_CSharp_Programs.FunctionalProg;
 
 namespace Fellowship_CSharp_Programs
 {
@@ -22,13 +23,19 @@ namespace Fellowship_CSharp_Programs
                     "3: Replacing Text \n" +
                     "4: Adding Numbers \n" +
                     "5: Reversing a String \n" +
+                    "\n"+
                     "6. String Replace \n"+
                     "7: Leap Year \n" +
                     "8: Coin Flip \n" +
                     "9: Power of 2 \n" +
                     "10: Harmonic Number \n" +
                     "11: Factors \n" +
-                    "12: Matrix Display \n");
+                    "\n"+
+                    "12: Matrix Display \n" +
+                    "13: Calculate triplet sum 0 \n" +
+                    "14: Euclidean Distance \n" +
+                    "15: Quadratic Roots \n" +
+                    "16: WindChill \n");
 
                 Console.WriteLine("Enter your option: ");
                 int op = Convert.ToInt32(Console.ReadLine());
@@ -41,6 +48,10 @@ namespace Fellowship_CSharp_Programs
                 HarmonicNumber harmonic = new HarmonicNumber();
                 Factors factors = new Factors();
                 TwoDimensionalArray arr = new TwoDimensionalArray();
+                SumThreeEqualsZero sum = new SumThreeEqualsZero();
+                Distance dist = new Distance();
+                QuadraticRoots roots = new QuadraticRoots();
+                WindChill windChill = new WindChill();
 
                 switch (op)
                 {
@@ -97,7 +108,22 @@ namespace Fellowship_CSharp_Programs
                     case 12:
                         arr.Matrix();
                         break;
-                      
+
+                    case 13:
+                        sum.CalTriplets();
+                        break;
+
+                    case 14:
+                        dist.CalDist();
+                        break;
+
+                    case 15:
+                        roots.CalRoots();
+                        break;
+
+                    case 16:
+                        windChill.CalWindChill();
+                        break;
 
                     default:
                         Console.WriteLine("Invalid option");

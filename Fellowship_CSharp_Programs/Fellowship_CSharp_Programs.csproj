@@ -45,10 +45,14 @@
   <ItemGroup>
     <Compile Include="BasicCoreProg\CoinFlip.cs" />
     <Compile Include="BasicCoreProg\Factors.cs" />
+    <Compile Include="FunctionalProg\Distance.cs" />
+    <Compile Include="FunctionalProg\QuadraticRoots.cs" />
+    <Compile Include="FunctionalProg\SumThreeEqualsZero.cs" />
     <Compile Include="FunctionalProg\TwoDimensionalArray.cs" />
     <Compile Include="BasicCoreProg\HarmonicNumber.cs" />
     <Compile Include="BasicCoreProg\LeapYear.cs" />
     <Compile Include="BasicCoreProg\pow2.cs" />
+    <Compile Include="FunctionalProg\WindChill.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RunProgram.cs" />
