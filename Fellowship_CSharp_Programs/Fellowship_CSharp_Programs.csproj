@@ -53,6 +53,10 @@
     <Compile Include="BasicCoreProg\LeapYear.cs" />
     <Compile Include="BasicCoreProg\pow2.cs" />
     <Compile Include="FunctionalProg\WindChill.cs" />
+    <Compile Include="LogicalProg\Gambler.cs" />
+    <Compile Include="LogicalProg\RandomDistinctCoupons.cs" />
+    <Compile Include="LogicalProg\StopWatchSimulation.cs" />
+    <Compile Include="LogicalProg\TicTacToe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RunProgram.cs" />

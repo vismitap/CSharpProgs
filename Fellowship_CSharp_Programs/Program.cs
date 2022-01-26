@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Fellowship_CSharp_Programs.FunctionalProg;
+using Fellowship_CSharp_Programs.LogicalProg;
 
 namespace Fellowship_CSharp_Programs
 {
@@ -35,23 +36,36 @@ namespace Fellowship_CSharp_Programs
                     "13: Calculate triplet sum 0 \n" +
                     "14: Euclidean Distance \n" +
                     "15: Quadratic Roots \n" +
-                    "16: WindChill \n");
+                    "16: WindChill \n" +
+                    "\n" +
+                    "17: Gambler \n" +
+                    "18: Generate Coupons \n" +
+                    "19: Stop Watch Simulation \n" +
+                    "20: TicTacToe Game \n");
 
                 Console.WriteLine("Enter your option: ");
                 int op = Convert.ToInt32(Console.ReadLine());
 
                 RunProgram prog = new RunProgram();
+
                 StringReplace stringReplace =  new StringReplace();
                 LeapYear lp = new LeapYear();
                 CoinFlip cf = new CoinFlip();
                 pow2 pow = new pow2();
                 HarmonicNumber harmonic = new HarmonicNumber();
                 Factors factors = new Factors();
+
                 TwoDimensionalArray arr = new TwoDimensionalArray();
                 SumThreeEqualsZero sum = new SumThreeEqualsZero();
                 Distance dist = new Distance();
                 QuadraticRoots roots = new QuadraticRoots();
                 WindChill windChill = new WindChill();
+
+                Gambler gambler = new Gambler();
+                RandomDistinctCoupons coupons = new RandomDistinctCoupons();
+                StopWatchSimulation watch = new StopWatchSimulation();
+                TicTacToe game = new TicTacToe();
+                
 
                 switch (op)
                 {
@@ -123,6 +137,22 @@ namespace Fellowship_CSharp_Programs
 
                     case 16:
                         windChill.CalWindChill();
+                        break;
+
+                    case 17:
+                        gambler.SimulateGamblerProblem();
+                        break;
+
+                    case 18:
+                        coupons.GenerateCoupon();
+                        break;
+
+                    case 19:
+                        watch.SimulateStopWatch();
+                        break;
+
+                    case 20: 
+                        game.TicTacToeGame();
                         break;
 
                     default:
